@@ -1,7 +1,7 @@
 # Joint Savings Account Solidity Smart Contract
 
 ## Overview
-This Solidity smart contract automates the creation and management of joint savings accounts on a custom Ethereum-compatible blockchain. It allows two user addresses to control a joint savings account and provides functionalities for depositing and withdrawing funds.
+This Solidity smart contract automates the creation and management of joint savings accounts on an Ethereum-compatible blockchain. It allows two user addresses to control a joint savings account and provides functionalities for depositing and withdrawing funds.
 
 ## Functions Summary
 - `withdraw(uint amount, address payable recipient)`: Allows account holders to withdraw funds from the joint savings account. The `require` statements ensure that the recipient is one of the authorized account holders (accountOne or accountTwo) and that the contract has sufficient funds to fulfill the withdrawal request. If either condition fails, the transaction is reverted with an error message.
